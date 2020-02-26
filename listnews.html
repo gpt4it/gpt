@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Title</title>
+
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .grid1
+            {
+                display: grid;
+                grid-template:
+                        "header header header"
+                        "left body right"
+                        "footer footer footer";
+             }
+            #header
+            {
+                grid-area: header;
+                background-color: aqua;
+                text-align: left;
+            }
+            #left
+            {
+                grid-area: left;
+                max-width: 20vw;
+                background-color: #f6f6f6;
+            }
+            #body
+            {
+                grid-area: body;
+                text-align: left;
+            }
+            #right
+            {
+                grid-area: right;
+                max-width:20vw;
+                background-color: #f6f6f6;
+            }
+            #footer
+            {
+                grid-area: footer;
+                background-color: #e6e6e6;
+            }
+            #inbody
+            {
+                display: grid;
+
+            }
+            .menu
+            {
+                list-style-type: none;
+
+            }
+            .menu li
+            {
+             display: inline;
+            }
+            .menu a
+            {
+                display: inline-block;
+                text-dacoration: none;
+                background-color: orange;
+                padding: 10px 15px;
+                border-button: 5px solid blue;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid1">
+            <div id="header">
+
+                <ul class="menu">
+                    <li><a href="">Hello</a></li>
+                    <li><a href="">World</a></li>
+                    <li><a href="">How</a></li>
+                    <li><a href="">Are</a></li>
+                    <li><a href="">You</a></li>
+
+                </ul>
+
+
+            </div>
+            <div id="left"> left
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi deserunt dicta doloribus esse fugit minus natus necessitatibus non qui quo velit, veritatis! A beatae deserunt distinctio dolorum eos.</p>
+
+            </div>
+            <div id="body">
+                <div id="inbody">
+                    <h3>Ttitle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi deserunt dicta doloribus esse fugit minus natus necessitatibus non qui quo velit, veritatis! A beatae deserunt distinctio dolorum eos.</p>
+
+                </div>
+            </div>
+            <div id="right">right
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi deserunt dicta doloribus esse fugit minus natus necessitatibus non qui quo velit, veritatis! A beatae deserunt distinctio dolorum eos.</p>
+            </div>
+            <div id="footer">footer</div>
+        </div>
+    </body>
+</html>
